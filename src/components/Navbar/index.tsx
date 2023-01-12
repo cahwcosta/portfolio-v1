@@ -10,7 +10,7 @@ const Navbar = () => {
         <S.Menu>
           <S.Options>
             {C.options.map(option => (
-              <S.Option><a>{option.text}</a></S.Option>
+              <S.Option key={option.text}><a>{option.text}</a></S.Option>
             ))}
           </S.Options>
         </S.Menu>

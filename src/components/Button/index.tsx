@@ -1,9 +1,12 @@
+import { FC } from 'react';
+import { ButtonProps } from './props';
 import * as S from './styles';
-import C from './const';
 
-const Button = () => {
+const Button: FC<ButtonProps> = ({ children, onClick, ...props }) => {
   return (
-    <></>
+    <S.Button onClick={onClick} {...props}>
+      {children}
+    </S.Button>
   )
 }
 

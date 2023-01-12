@@ -4,7 +4,7 @@ export const Header = styled.section`
   padding-top: 237px;
 `
 
-export const InitialText = styled.div`
+export const InitialText = styled.p`
   font-size: 30px;
   font-weight: 550;
   line-height: 35px;
@@ -17,6 +17,6 @@ export const InitialText = styled.div`
 export const Profission = styled.div`
   font-size: 20px;
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   color: ${({theme}) => theme.colors.grayTaupe};
 `
