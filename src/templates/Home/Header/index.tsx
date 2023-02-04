@@ -2,29 +2,39 @@ import * as S from './styles';
 import C from './const';
 import Wrapper from '../../../components/Wrapper';
 import Button from '../../../components/Button';
-import { useEffect, useRef } from 'react';
+import { ReactNode, useEffect, useRef } from 'react';
 
 const Header = () => {
   const textRef = useRef<HTMLDivElement>(null);
-  const words = C.text.props.children;
-  let i = 0
+  const text = C.text.props.children;
+  let phrases: (ReactNode | string)[] = []
 
-  console.log(words)
+  text.forEach((sentence: any) => {
+    if(typeof sentence === 'string') {
+      phrases.push(sentence)
+    } else {
+      phrases.push(sentence.props.children)
+    }
+  })
+
+  const finalText = phrases.join('')
+  
+  let i = 0;
 
   const splitText = () => { 
     if(textRef.current) {
-      if(i < words.length) {
-        textRef.current.innerHTML += words.charAt(i)
+      if(i < finalText.length) {
+        textRef.current.innerHTML += finalText.charAt(i)
         i++;
         setTimeout(splitText, 100)
       }
+      return;
     }
   } 
 
   useEffect(() => {
-    splitText()
+    splitText();
   }, [])
-
 
   return (
     <S.Header>

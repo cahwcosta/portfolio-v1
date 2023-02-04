@@ -12,6 +12,16 @@ export const InitialText = styled.p`
   span {
     color: ${({theme}) => theme.colors.pinkDark};
   }
+
+  &::after {
+  content: "|";
+  animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+  }
 `
 
 export const Profission = styled.div`
