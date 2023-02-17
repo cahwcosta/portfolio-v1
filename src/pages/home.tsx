@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Habilidades from "../templates/Home/Habilidades";
 import Header from "../templates/Home/Header";
 import QuemSou from "../templates/Home/QuemSou";
 
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar/>
       <Header/>
       <QuemSou/>
+      <Habilidades/>
     </>
   )
 }
