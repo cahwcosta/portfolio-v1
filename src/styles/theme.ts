@@ -8,7 +8,7 @@ const theme = {
   },
   mediaQuerys: {
     desktop: '1920px',
-    tablet: '800px',
+    tablet: '1000px',
     mobile: '600px'
   }
 };
