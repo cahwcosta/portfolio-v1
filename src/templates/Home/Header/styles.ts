@@ -1,26 +1,23 @@
 import styled from 'styled-components';
 
 export const Header = styled.section`
-  padding-top: 237px;
+  padding-top: 300px;
+`
+
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 export const InitialText = styled.p`
   font-size: 30px;
   font-weight: 550;
   line-height: 35px;
+  text-align: center;
 
   span {
     color: ${({theme}) => theme.colors.pinkDark};
-  }
-
-  &::after {
-  content: "|";
-  animation: blink 1s infinite;
-  }
-
-  @keyframes blink {
-    0%, 100% {opacity: 1;}
-    50% {opacity: 0;}
   }
 `
 
@@ -29,4 +26,5 @@ export const Profission = styled.div`
   padding-top: 5px;
   padding-bottom: 20px;
   color: ${({theme}) => theme.colors.grayTaupe};
+  text-align: center;
 `
