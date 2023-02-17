@@ -24,7 +24,7 @@ export const Title = styled.h2`
   }
 `
 
-export const RightContent = styled.div``
+export const CenterContent = styled.div``
 
 export const Menu = styled.nav`
   @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
@@ -66,7 +66,15 @@ border: none;
 padding: 8px 0;
 
 @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-  display: flex;  
+  display: flex;
 }
 `
 
+
+export const RightContent = styled.div`
+display: flex;
+
+@media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
+  display: none;
+}
+`

@@ -1,12 +1,19 @@
 import * as S from './styles';
+import { useState } from "react";
 
-const Burger = ({active}: {active: boolean}) => {
-  // const {firstLineRef, secondLineRef, thirdLineRef} = useAnimation(active);
+
+const Burger = () => {
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+  }
+
   return (
-    <S.Burger>
-      <S.Line/>
-      <S.Line/>
-      <S.Line/>
+    <S.Burger active={isActive} onClick={handleClick}>
+      <S.Line active={isActive}/>
+      <S.Line active={isActive}/>
+      <S.Line active={isActive}/>
     </S.Burger>
   )
 }
