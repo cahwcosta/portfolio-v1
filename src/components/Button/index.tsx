@@ -1,8 +1,7 @@
-import { FC } from 'react';
-import { ButtonProps } from './props';
+import * as I from './props';
 import * as S from './styles';
 
-const Button: FC<ButtonProps> = ({ children, onClick, ...props }) => {
+const Button = ({ children, onClick, ...props }: I.ButtonProps) => {
   return (
     <S.Button onClick={onClick} {...props}>
       {children}

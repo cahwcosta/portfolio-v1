@@ -1,11 +1,8 @@
 import * as S from './styles';
-import { FC } from 'react';
+import * as I from './props'
 
-interface WrapperProps {
-  children: React.ReactNode;
-}
 
-const Wrapper: FC<WrapperProps> = ({ children }) => {
+const Wrapper = ({ children }: I.WrapperProps) => {
   return <S.Wrapper>{children}</S.Wrapper>
 }
 

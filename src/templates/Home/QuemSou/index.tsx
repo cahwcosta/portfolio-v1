@@ -5,10 +5,14 @@ import Wrapper from '../../../components/Wrapper';
 
 const QuemSou = () => {
   return (
-    <S.QuemSou>
+    <S.QuemSou id="#quemSou">
       <Wrapper>
         <Title>{C.title}</Title>
-        <S.Text>{C.text}</S.Text>
+        <S.Content>
+          {C.texts.map(text => (
+            <S.Text key={text}>{text}</S.Text>
+          ))}
+        </S.Content>
       </Wrapper>
     </S.QuemSou>
   )

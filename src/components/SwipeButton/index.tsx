@@ -1,5 +1,4 @@
 import * as S from './styles';
-import C from './props';
 import { useState } from 'react';
 
 const SwipeButton = () => {
