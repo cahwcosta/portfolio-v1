@@ -4,23 +4,10 @@ import SwipeButton from '../../SwipeButton';
 import { useState } from 'react';
 
 const NavbarDesktop = () => {
-  const [isActive, setIsActive] = useState(false);
-
-  const handleActiveBurger = () => {
-    setIsActive(!isActive);
-  }
 
   return (
     <S.Navbar>
       <S.Title>{C.title}</S.Title>
-      <S.MobileButton>
-        <S.Burger active={isActive} onClick={handleActiveBurger}>
-          <S.Line active={isActive}/>
-          <S.Line active={isActive}/>
-          <S.Line active={isActive}/>
-        </S.Burger>
-      </S.MobileButton>
-
       <S.CenterContent>
         <S.Menu>
           <S.Options>

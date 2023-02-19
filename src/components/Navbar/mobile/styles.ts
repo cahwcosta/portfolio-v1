@@ -1,49 +1,51 @@
 import styled from 'styled-components';
 
 export const Navbar = styled.section`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  padding: 27px 60px;
   border-bottom: 1px solid ${({theme}) => theme.colors.pinkDark};
   position: fixed;
   background-color: ${({theme}) => theme.colors.blackEerie};
+  padding: 23px 25px;
+`
 
-  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-    padding: 23px 25px;
-  }
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 export const Title = styled.h2`
-  font-size: 30px;
   font-weight: 500;
-
-  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-    font-size: 25px;
-  }
+  font-size: 25px;
 `
 
-export const CenterContent = styled.div``
+export const  HiddenContent = styled.div`
+  height: 0;
+  overflow: hidden;
+  transition: all .4s ease;
+`
 
 export const Menu = styled.nav`
-  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-    display: none;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
 `
 
 export const Options = styled.ul`
   display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
 `
 
 export const Option = styled.li`
-  margin: 0 20px;
-  font-size: 17px;
+  margin: 20px 0;
+  font-size: 25px;
   transition: color .5s ease;
 
   &:last-child {
-    margin-right: 0%;
+    margin-bottom: 40px;
   }
 
   &:hover {
@@ -56,7 +58,7 @@ export const Option = styled.li`
 `
 
 export const MobileButton = styled.button`
-display: none;
+display: flex;
 width: 35px;
 height: 40px;
 align-items: center;
@@ -64,24 +66,16 @@ justify-content: center;
 background: none;
 border: none;
 padding: 8px 0;
-
-@media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-  display: flex;
-}
 `
 
 export const Burger = styled.div<{active: boolean}>`
-  display: none;
+  display: block;
   width: 100%;
   height: 100%;
   position: relative;
 
   &:hover {
     cursor: pointer;
-  }
-
-  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-    display: block;
   }
 `;
 
@@ -112,8 +106,4 @@ export const Line = styled.div<{active: boolean}>`
 
 export const RightContent = styled.div`
 display: flex;
-
-@media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-  display: none;
-}
 `
