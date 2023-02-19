@@ -5,12 +5,13 @@ import { useRef } from 'react';
 
 const ScrollTo = ({children, hash}: I.ScrollToProps) => {
   const scrollToRef = useRef<HTMLDivElement>(null)
+  
 
   const handleScrollTo = () => {
     if (scrollToRef.current) {
       gsap.to(window, {
-        duration: 2,
-        scrollTo: {y: "#quemSou"}
+        duration: 0.7,
+        scrollTo: {y: "#quemSou", offsetY: 115}
       });
     }
   }
