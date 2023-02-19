@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const GSAPPlugins = () => {
   useEffect(() => {
-    gsap.registerPlugin(ScrollToPlugin);
+    gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
   }, []);
   return null;
 }

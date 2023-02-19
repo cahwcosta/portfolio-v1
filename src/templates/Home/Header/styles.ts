@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const Header = styled.section`
   padding-top: 300px;
+
+  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
+    padding-top: 150px;
+  }
 `
 
 export const Content = styled.div`
@@ -19,6 +23,11 @@ export const InitialText = styled.p`
   span {
     color: ${({theme}) => theme.colors.pinkDark};
   }
+
+  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
+    font-size: 23px;
+    line-height: 27px;
+  }
 `
 
 export const Profission = styled.div`
@@ -27,4 +36,8 @@ export const Profission = styled.div`
   padding-bottom: 20px;
   color: ${({theme}) => theme.colors.grayTaupe};
   text-align: center;
+
+  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
+    font-size: 17px;  
+  }
 `
