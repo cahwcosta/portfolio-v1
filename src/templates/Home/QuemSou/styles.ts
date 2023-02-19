@@ -1,11 +1,6 @@
 import styled from 'styled-components';
 
 export const QuemSou = styled.section`
-  margin-top: 150px;
-
-  @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
-    margin-top: 75px;
-  }
 `
 
 export const Content = styled.div`

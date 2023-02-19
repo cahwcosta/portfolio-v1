@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Experiencias from "../templates/Home/Experiencias";
 import Habilidades from "../templates/Home/Habilidades";
 import Header from "../templates/Home/Header";
 import QuemSou from "../templates/Home/QuemSou";
@@ -10,6 +11,7 @@ const Home = () => {
       <Header/>
       <QuemSou/>
       <Habilidades/>
+      <Experiencias/>
     </>
   )
 }

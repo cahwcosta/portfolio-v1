@@ -5,7 +5,7 @@ import Wrapper from '../../../components/Wrapper';
 
 const QuemSou = () => {
   return (
-    <S.QuemSou>
+    <S.QuemSou id="#quemSou">
       <Wrapper>
         <Title>{C.title}</Title>
         <S.Content>

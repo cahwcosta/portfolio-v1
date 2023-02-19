@@ -1,10 +1,9 @@
 import * as S from './styles';
 import C from '../const';
 import SwipeButton from '../../SwipeButton';
-import { useState } from 'react';
+import ScrollTo from '../../ScrollTo';
 
 const NavbarDesktop = () => {
-
   return (
     <S.Navbar>
       <S.Title>{C.title}</S.Title>
@@ -12,7 +11,9 @@ const NavbarDesktop = () => {
         <S.Menu>
           <S.Options>
             {C.options.map(option => (
-              <S.Option key={option.text}><a>{option.text}</a></S.Option>
+              <ScrollTo key={option.id} hash={option.id}>
+                <S.Option>{option.text}</S.Option>
+              </ScrollTo>
             ))}
           </S.Options>
         </S.Menu>

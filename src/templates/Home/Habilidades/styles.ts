@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Habilidades = styled.section`
-  padding-top: 175px;
 `
 
 export const Content = styled.div`
