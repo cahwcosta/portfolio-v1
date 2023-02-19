@@ -1,10 +1,9 @@
 import * as S from './styles';
-import { TitleProps } from './props';
-import { FC } from 'react';
+import  * as I from './props';
 
 
 
-const Title: FC<TitleProps> = ({children}) => {
+const Title = ({children}: I.TitleProps) => {
   return (
     <S.Title>{children}</S.Title>
   )
