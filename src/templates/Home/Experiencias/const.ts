@@ -1,4 +1,5 @@
 export default {
+  id: "experiencias",
   title: "Experiências",
   content: [
     {

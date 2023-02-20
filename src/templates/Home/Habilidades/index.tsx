@@ -5,7 +5,7 @@ import Wrapper from '../../../components/Wrapper';
 
 const Habilidades = () => {
   return (
-    <S.Habilidades>
+    <S.Habilidades id={C.id}>
       <Wrapper>
         <S.Content>
           <Title children={C.title}/>

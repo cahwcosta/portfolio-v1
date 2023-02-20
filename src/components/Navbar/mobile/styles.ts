@@ -37,16 +37,13 @@ export const Options = styled.ul`
   flex-direction: column;
   align-items: center;
   list-style: none;
+  margin-bottom: 20px;
 `
 
 export const Option = styled.li`
   margin: 20px 0;
   font-size: 25px;
   transition: color .5s ease;
-
-  &:last-child {
-    margin-bottom: 40px;
-  }
 
   &:hover {
     color: ${({theme}) => theme.colors.pinkDark};

@@ -5,7 +5,7 @@ import Title from '../../../components/Title';
 
 const Experiencias = () => {
   return (
-    <S.Experiencias>
+    <S.Experiencias id={C.id}>
       <Wrapper>
         <S.Content>
           <Title>{C.title}</Title>

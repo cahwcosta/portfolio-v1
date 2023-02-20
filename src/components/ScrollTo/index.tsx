@@ -11,7 +11,7 @@ const ScrollTo = ({children, hash}: I.ScrollToProps) => {
     if (scrollToRef.current) {
       gsap.to(window, {
         duration: 0.7,
-        scrollTo: {y: "#quemSou", offsetY: 115}
+        scrollTo: {y: hash}
       });
     }
   }

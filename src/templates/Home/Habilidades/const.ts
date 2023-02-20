@@ -1,4 +1,5 @@
 export default {
+  id: "habilidades",
   title: "Habilidades",
   cards: [
     {
