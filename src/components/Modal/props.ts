@@ -1,7 +1,6 @@
-
 import { ReactNode } from "react";
 
-export interface ScrollToProps {
+export interface ModalProps {
+  isOpen: boolean;
   children: ReactNode;
-  hash: string;
 }

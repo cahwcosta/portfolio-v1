@@ -3,7 +3,7 @@ export default {
   options: [
     {
       text: 'Quem sou',
-      id: '#quem-sou'
+      id: '#quemSou'
     },
     {
       text: 'Habilidades',

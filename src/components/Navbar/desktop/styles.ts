@@ -41,6 +41,7 @@ export const Option = styled.li`
   margin: 0 20px;
   font-size: 17px;
   transition: color .5s ease;
+  cursor: pointer;
 
   &:last-child {
     margin-right: 0%;

@@ -5,10 +5,21 @@ import Title from '../../../components/Title';
 
 const Experiencias = () => {
   return (
-    <S.Experiencias>
+    <S.Experiencias id={C.id}>
       <Wrapper>
         <S.Content>
           <Title>{C.title}</Title>
+
+          <S.Accordion>
+            <S.AccordionMenu>
+              {C.content.map(option => (
+                <S.Option>{option.title}</S.Option>
+              ))}
+            </S.AccordionMenu>
+            <S.AccordionContent>
+                
+            </S.AccordionContent>
+          </S.Accordion>
         </S.Content>
       </Wrapper>
     </S.Experiencias>

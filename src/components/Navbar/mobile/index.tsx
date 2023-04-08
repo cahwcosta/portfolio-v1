@@ -2,6 +2,7 @@ import * as S from './styles';
 import C from '../const';
 import { useRef, useState } from 'react';
 import SwipeButton from '../../SwipeButton';
+import ScrollTo from '../../ScrollTo';
 
 const NavbarMobile = () => {
   const [isActive, setIsActive] = useState(false);
@@ -13,7 +14,6 @@ const NavbarMobile = () => {
     if (hiddenContentRef.current && menuRef.current) {
       if (isActive == false) {
         hiddenContentRef.current.style.height = `${menuRef.current.clientHeight}px`
-        console.log()
       } else {
         hiddenContentRef.current.style.height = "0";
       }
@@ -36,7 +36,9 @@ const NavbarMobile = () => {
         <S.Menu ref={menuRef}>
           <S.Options>
             {C.options.map(option => (
-              <S.Option key={option.text}><a>{option.text}</a></S.Option>
+              <ScrollTo key={option.id} hash={option.id}>
+                <S.Option onClick={handleActiveBurger}>{option.text}</S.Option>
+              </ScrollTo>
             ))}
           </S.Options>
         <SwipeButton/>

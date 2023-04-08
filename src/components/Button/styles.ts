@@ -15,6 +15,6 @@ export const Button = styled.button`
 
   @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
     padding: 14px 30px;
-    font-size: 13px;
+    font-size: 15px;
   }
 `
