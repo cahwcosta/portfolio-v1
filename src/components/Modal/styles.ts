@@ -6,8 +6,9 @@ export const Modal = styled.section<I.ModalProps>`
   width: 100vw;
   z-index: 999;
   position: fixed;
+  top: 0;
   background-color: rgba(31, 19, 31, 0.6);
-  display: ${({isOpen}) => isOpen ? 'flex' : 'none'};
+  display: ${({ isOpen }) => isOpen == true ? 'flex' : 'none'};
   align-items: center;
   justify-content: center;
 `;

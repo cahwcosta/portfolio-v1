@@ -9,7 +9,6 @@ const Home = () => {
   return(
     <>
       <Navbar/>
-      <Modal isOpen={true}>A</Modal>
       <Header/>
       <QuemSou/>
       <Habilidades/>
