@@ -11,6 +11,18 @@ export const GlobalStyle = createGlobalStyle`
     background-color: #19041c;
     color: #F9F9F9;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #19151c;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ba21d1;
+    border-radius: 5px; 
   }
 
   body, input, textarea, button {

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Habilidades = styled.section`
+position: relative;
 `
 
 export const Content = styled.div`

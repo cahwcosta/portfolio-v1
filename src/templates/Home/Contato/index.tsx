@@ -4,7 +4,7 @@ import Title from '../../../components/Title';
 
 const Contato = () => {
   return (
-    <S.Contato>
+    <S.Contato id={C.id}>
       <Title>{C.title}</Title>
     </S.Contato>
   )

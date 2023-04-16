@@ -10,7 +10,7 @@ export default {
       id: '#habilidades'
     },
     {
-      text: 'Experiencias',
+      text: 'Experiências',
       id: '#experiencias'
     },
     {
