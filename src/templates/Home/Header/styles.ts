@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.section`
-position: relative;
+  position: relative;
   padding-top: 300px;
 
   @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {

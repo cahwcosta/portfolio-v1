@@ -9,26 +9,24 @@ const QuemSou = () => {
   const quemSouRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const tl = gsap.timeline()
-
-    tl.to(quemSouRef.current, {
-      x: "100",
-      duration: 1,
-      delay: 2.5
+    gsap.to(quemSouRef.current, {
+      xPercent: -50,
+      left: "50%",
+      opacity: 1,
+      duration: 0.7,
+      delay: 2.6
     })
   }, [])
 
 
   return (
     <S.QuemSou id={C.id} ref={quemSouRef}>
-      <Wrapper>
-        <Title>{C.title}</Title>
+      <Title>{C.title}</Title>
         <S.Content>
           {C.texts.map(text => (
             <S.Text key={text}>{text}</S.Text>
           ))}
         </S.Content>
-      </Wrapper>
     </S.QuemSou>
   )
 }

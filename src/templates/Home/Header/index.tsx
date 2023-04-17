@@ -19,7 +19,7 @@ const Header = () => {
   }, [])
 
   return (
-    <S.Header>
+    <S.Header id={C.id}>
       <Wrapper>
         <S.Content>
           {C.texts.map((text, index) => (

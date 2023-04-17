@@ -6,7 +6,9 @@ import ScrollTo from '../../ScrollTo';
 const NavbarDesktop = () => {
   return (
     <S.Navbar>
-      <S.Title>{C.title}</S.Title>
+      <ScrollTo hash={C.title.id}>
+        <S.Title>{C.title.titleName}</S.Title>
+      </ScrollTo>
       <S.CenterContent>
         <S.Menu>
           <S.Options>

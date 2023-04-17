@@ -1,5 +1,8 @@
 export default {
-  title: 'Portfolio',
+  title: {
+    titleName: 'Portfolio',
+    id: "#header"
+  },
   options: [
     {
       text: 'Quem sou',
