@@ -8,20 +8,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #19041c;
+    background-color: #1F131F;
     color: #F9F9F9;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 
   ::-webkit-scrollbar-track {
-    background-color: #19151c;
+    background-color: #1F131F;
   }
   ::-webkit-scrollbar {
     width: 5px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #ba21d1;
+    background: #EA4F87;
     border-radius: 5px; 
   }
 

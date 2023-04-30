@@ -1,8 +1,8 @@
 const theme = {
   colors: {
-    blackEerie: '#19041c',
-    blackRaisin: '#19151c',
-    pinkDark: '#ba21d1',
+    blackEerie: '#1F131F',
+    blackRaisin: '#212121',
+    pinkDark: '#EA4F87',
     whiteGost: '#F9F9F9',
     grayTaupe: '#8A8989'
   },
