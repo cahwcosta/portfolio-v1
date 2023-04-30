@@ -1,5 +1,8 @@
 export default {
-  title: 'Portfolio',
+  title: {
+    titleName: 'Portfolio',
+    id: "#header"
+  },
   options: [
     {
       text: 'Quem sou',
@@ -10,7 +13,7 @@ export default {
       id: '#habilidades'
     },
     {
-      text: 'Experiencias',
+      text: 'Experiências',
       id: '#experiencias'
     },
     {

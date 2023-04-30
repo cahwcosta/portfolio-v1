@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const QuemSou = styled.section`
+  opacity: 0;
+  position: relative;
+  left: -50%;
 `
 
 export const Content = styled.div`
@@ -11,6 +14,7 @@ export const Content = styled.div`
   @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
     flex-direction: column;
     align-items: center;
+    padding: 0 25px;
   }
 `
 

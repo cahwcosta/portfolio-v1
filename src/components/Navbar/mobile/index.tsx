@@ -22,7 +22,9 @@ const NavbarMobile = () => {
   return (
     <S.Navbar>
       <S.Header>
-        <S.Title>{C.title}</S.Title>
+        <ScrollTo hash={C.title.id}>
+          <S.Title>{C.title.titleName}</S.Title>
+        </ScrollTo>
         <S.MobileButton>
           <S.Burger active={isActive} onClick={handleActiveBurger}>
             <S.Line active={isActive}/>

@@ -8,6 +8,7 @@ export const Navbar = styled.section`
   padding: 27px 60px;
   border-bottom: 1px solid ${({theme}) => theme.colors.pinkDark};
   position: fixed;
+  z-index: 1;
   background-color: ${({theme}) => theme.colors.blackEerie};
 
   @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {

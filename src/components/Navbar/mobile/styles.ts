@@ -4,6 +4,7 @@ export const Navbar = styled.section`
   width: 100%;
   border-bottom: 1px solid ${({theme}) => theme.colors.pinkDark};
   position: fixed;
+  z-index: 1;
   background-color: ${({theme}) => theme.colors.blackEerie};
   padding: 23px 25px;
 `

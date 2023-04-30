@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.section`
+  position: relative;
   padding-top: 300px;
 
   @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
@@ -12,6 +13,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 `
 
 export const InitialText = styled.p`
@@ -19,6 +21,7 @@ export const InitialText = styled.p`
   font-weight: 550;
   line-height: 35px;
   text-align: center;
+  opacity: 0;
 
   span {
     color: ${({theme}) => theme.colors.pinkDark};
@@ -36,8 +39,14 @@ export const Profission = styled.div`
   padding-bottom: 20px;
   color: ${({theme}) => theme.colors.grayTaupe};
   text-align: center;
+  opacity: 0;
 
   @media (max-width: ${({theme}) => theme.mediaQuerys.tablet}) {
     font-size: 17px;  
   }
+`
+
+export const ButtonAnimation = styled.div`
+  opacity: 0;
+  margin-top: -100px;
 `
